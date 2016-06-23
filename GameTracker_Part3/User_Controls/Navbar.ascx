@@ -15,11 +15,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                 <% if (Session["username"] != null)
+                 <% if (Session["userName"] != null)
                      { %>  
                 <li id="Li1" runat="server"><a href="Logout.aspx"><i class="fa fa-user fa-lg" ></i> Logout</a></li>
                 <%}
-    else if(Session["username"] == null)
+    else if(Session["userName"] == null)
     {%>
                 <li id="Li2" runat="server"><a href="Login.aspx"><i class="fa fa-user fa-lg"></i> Login</a></li>
                 <%} %>

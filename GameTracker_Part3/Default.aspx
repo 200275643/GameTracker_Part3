@@ -15,34 +15,37 @@
             <div class="col-xs-12 col-md-4">
                 <div class="jumbotron" >
                     <p>Cricket</p> 
-                    <a class="btn btn-collapse" href="GameStats.aspx" role="button">
+                    <a class="btn btn-collapse" href="CricketGameStats.aspx" role="button">
                        Game Stats &raquo;</a>
                      </div>
                     </div>
       <div class="col-xs-12 col-md-4">
             <div class="jumbotron"> 
-                    <a class="btn btn-collapse" href="#" role="button">
+                <p>Tennis</p>
+                    <a class="btn btn-collapse" href="TennisGameStats.aspx" role="button">
                         
-                        Tennis &raquo;</a>
-                     <p>Game Stats</p>
+                        Game Stats &raquo;</a>
+                     
                 </div>
         </div>
             </div>
 <div class="row">
         <div class="col-xs-12 col-md-4">
            <div class="jumbotron">  
-                    <a class="btn btn-collapse" href="#" role="button">
+               <p>Soccer</p>     
+               <a class="btn btn-collapse" href="SoccerGameStats.aspx" role="button">
                         
-                       Soccer &raquo;</a>
-                     <p>Game Stats</p>
+                       Game Stats &raquo;</a>
+                     
            </div>     
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="jumbotron">  
-                    <a class="btn btn-collapse" href="#" role="button">
+              <p>Golf</p>      
+              <a class="btn btn-collapse" href="GolfGameStats.aspx" role="button">
                         
-                        Golf &raquo;</a>
-                     <p>Game Stats</p>
+                        Game Stats &raquo;</a>
+                     
                  </div>
             </div>
             </div>

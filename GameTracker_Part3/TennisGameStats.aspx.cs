@@ -8,7 +8,7 @@ using GameTracker_Part3.Models;
 
 namespace GameTracker_Part3
 {
-    public partial class GameStats : System.Web.UI.Page
+    public partial class TennisGameStats : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,7 +20,7 @@ namespace GameTracker_Part3
 
             if (!IsPostBack)
             {
-                this.getSoccerGame();
+                this.getTennisGame();
             }
         }
 
@@ -31,28 +31,28 @@ namespace GameTracker_Part3
          * @methods getGame
          * @return {void}
          */
-        protected void getSoccerGame()
+        protected void getTennisGame()
         {
             using (chandureddyEntities db = new chandureddyEntities())
             {
-                var CricketGames = (from allCricketGames in db.Games
-                                    where allCricketGames.gamename == "cricket"
-                                    select allCricketGames);
-                CricketGamesGridView.DataSource = CricketGames.AsQueryable().ToList();
-                CricketGamesGridView.DataBind();
+                var TennisGames = (from allTennisGames in db.Games
+                                    where allTennisGames.gamename == "Tennis"
+                                    select allTennisGames);
+                TennisGamesGridView.DataSource = TennisGames.AsQueryable().ToList();
+                TennisGamesGridView.DataBind();
             }
 
         }
 
-        protected void SoccerGamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        protected void TennisGamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
 
         }
 
-        protected void SoccerGamesGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void TennisGamesGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            CricketGamesGridView.PageIndex = e.NewPageIndex;
-            this.getSoccerGame();
+            TennisGamesGridView.PageIndex = e.NewPageIndex;
+            this.getTennisGame();
         }
     }
 }

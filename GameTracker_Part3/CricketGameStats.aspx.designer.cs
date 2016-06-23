@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameTracker_Part3
-{
-
-
-    public partial class GameStats
-    {
-
+namespace GameTracker_Part3 {
+    
+    
+    public partial class CricketGameStats {
+        
         /// <summary>
         /// CricketGamesGridView control.
         /// </summary>
