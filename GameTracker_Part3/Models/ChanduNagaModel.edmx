@@ -18,7 +18,7 @@
           <Property Name="awayteampoints" Type="int" Nullable="false" />
           <Property Name="attendance" Type="int" Nullable="false" />
           <Property Name="winningteam" Type="nchar" MaxLength="50" Nullable="false" />
-          <Property Name="dateplayed" Type="datetime" Nullable="false" />
+          <Property Name="dateplayed" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="User_Information">
           <Key>
@@ -50,7 +50,7 @@
           <Property Name="awayteampoints" Type="Int32" Nullable="false" />
           <Property Name="attendance" Type="Int32" Nullable="false" />
           <Property Name="winningteam" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="dateplayed" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dateplayed" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityType Name="User_Information">
           <Key>

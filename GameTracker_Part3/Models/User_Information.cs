@@ -11,7 +11,7 @@ namespace GameTracker_Part3.Models
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class User_Information
     {
         public int Id { get; set; }

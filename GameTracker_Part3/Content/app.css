@@ -6,6 +6,13 @@
    text-align: center;
    color:red;
    }
+.table{
+    background-color:white;
+}
+
+label{
+    color:white;
+}
 
 body
 { background-image: url('../Assets/background.jpg');

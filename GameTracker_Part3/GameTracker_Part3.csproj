@@ -84,6 +84,8 @@
     <Content Include="Assets\logo.jpg" />
     <Content Include="CreateGamePage.aspx" />
     <Content Include="CricketGameStats.aspx" />
+    <Content Include="GameEditing.aspx" />
+    <Content Include="GameEditPage.aspx" />
     <Content Include="GolfGameStats.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
@@ -180,6 +182,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameEditing.aspx.cs">
+      <DependentUpon>GameEditing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameEditing.aspx.designer.cs">
+      <DependentUpon>GameEditing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameEditPage.aspx.cs">
+      <DependentUpon>GameEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameEditPage.aspx.designer.cs">
+      <DependentUpon>GameEditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GolfGameStats.aspx.cs">
       <DependentUpon>GolfGameStats.aspx</DependentUpon>

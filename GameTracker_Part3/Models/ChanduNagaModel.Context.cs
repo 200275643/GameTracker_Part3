@@ -12,19 +12,19 @@ namespace GameTracker_Part3.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
+    
     public partial class chandureddyEntities : DbContext
     {
         public chandureddyEntities()
             : base("name=chandureddyEntities")
         {
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-
+    
         public virtual DbSet<Game> Games { get; set; }
         public virtual DbSet<User_Information> User_Information { get; set; }
     }

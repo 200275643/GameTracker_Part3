@@ -15,13 +15,10 @@
                                     <asp:BoundField DataField="awayteam" HeaderText="Away Team" Visible="true" />
                                     <asp:BoundField DataField="attendance" HeaderText="Attendance" Visible="true" />
                                     <asp:BoundField DataField="venue" HeaderText="Venue" Visible="true" />
-                                      <%if (Session["userName"] != null) 
-                                    {%>
-                                     <asp:CommandField  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true"
+                                      
                                     
-                            ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
-                                       <%  }%>
-                            ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
+                                         
+                           
                                     
                                 </Columns>
                             </asp:GridView>

@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
       <div class="text-center">
-                            <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
+                            <asp:GridView runat="server" CssClass="table table-inverse"
                                 ID="CricketGamesGridView" AutoGenerateColumns="false" DataKeyNames="Id"
                                 OnRowDeleting="CricketGamesGridView_RowDeleting" AllowPaging ="true"
                                 PageSize="4" OnPageIndexChanging="CricketGamesGridView_PageIndexChanging"
@@ -15,12 +15,9 @@
                                     <asp:BoundField DataField="awayteam" HeaderText="Away Team" Visible="true" />
                                     <asp:BoundField DataField="attendance" HeaderText="Attendance" Visible="true" />
                                     <asp:BoundField DataField="venue" HeaderText="Venue" Visible="true" />
-                                      <% if (Session["userName"] != null)
-                     { %>   
-                                     <asp:CommandField  HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete" ShowDeleteButton="true"
+                          
                                     
-                            ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
-                                       <%  }%>
+                                       
                             
                                     
                                 </Columns>
