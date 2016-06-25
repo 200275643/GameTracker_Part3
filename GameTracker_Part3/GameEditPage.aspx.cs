@@ -5,6 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using GameTracker_Part3.Models;
+/**
+ * Author: Naga Rimmalapudi and Chandra Reddy
+ * Student ID: 200277598 and 200275643
+ * Date: June 22, 2016
+ * website name: http://gametrackerpart3comp2007.azurewebsites.net/
+ * This displays list of all games 
+ */
+
 namespace GameTracker_Part3
 {
     public partial class GameEditPage : System.Web.UI.Page

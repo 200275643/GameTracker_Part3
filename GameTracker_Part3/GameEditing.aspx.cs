@@ -6,7 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using GameTracker_Part3.Models;
 using System.Web.ModelBinding;
-
+/**
+ * Author: Naga Rimmalapudi and Chandra Reddy
+ * Student ID: 200277598 and 200275643
+ * Date: June 22, 2016
+ * website name: http://gametrackerpart3comp2007.azurewebsites.net/
+ * This displays the editor page the games
+ */
 namespace GameTracker_Part3
 {
     public partial class GameEditing : System.Web.UI.Page
@@ -21,18 +27,18 @@ namespace GameTracker_Part3
 
         protected void GetGame()
         {
-            // populate the form with existing student data from the db
+            // populate the form with existing data from the db
             int Id = Convert.ToInt32(Request.QueryString["Id"]);
 
             // connect to the EF DB
             using (chandureddyEntities db = new chandureddyEntities())
             {
-                // populate a student instance with the StudentID from the URL parameter
+                // populate a game instance with the ID from the URL parameter
                 Game updatedGame = (from Game in db.Games
                                           where Game.Id == Id
                                           select Game).FirstOrDefault();
 
-                // map the student properties to the form controls
+                // map the game properties to the form controls
                 if (updatedGame != null)
                 {
                     GameNameTextBox.Text = updatedGame.gamename;
@@ -59,7 +65,7 @@ namespace GameTracker_Part3
             // Use EF to connect to the server
             using (chandureddyEntities db = new chandureddyEntities())
             {
-                // use the Student model to create a new student object and
+                // use the game model to create a new student object and
                 // save a new record
                 Game newGame = new Game();
 
@@ -70,13 +76,13 @@ namespace GameTracker_Part3
                     // get the id from url
                     Id = Convert.ToInt32(Request.QueryString["Id"]);
 
-                    // get the current student from EF DB
+                    // get the current game from EF DB
                     newGame = (from Game in db.Games
                                   where Game.Id == Id
                                   select Game).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // add form data to the new game record
                 newGame.gamename = GameNameTextBox.Text;
                 newGame.hometeam = HomeTeamTextBox.Text;
                 newGame.hometeampoints = Convert.ToInt32(HomeTeamPointsTextBox.Text);
@@ -85,9 +91,9 @@ namespace GameTracker_Part3
                 newGame.attendance = Convert.ToInt32(AttendanceTextBox.Text);
                 newGame.venue = VenueTextBox.Text;
                 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new game into the database
 
-                // check to see if a new student is being added
+                // check to see if a new game is being added
                 if (Id == 0)
                 {
                     db.Games.Add(newGame);
@@ -96,7 +102,7 @@ namespace GameTracker_Part3
                 // save our changes - run an update
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated gameedit page
                 Response.Redirect("~/GameEditPage.aspx");
             }
         }

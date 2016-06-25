@@ -10,7 +10,7 @@ using GameTracker_Part3.Models;
 
 // Author: Naga Rimmalapudi and Chandra Reddy
 // Student #: 200277598 and 200275643
-//Date: June 0, 2016
+//Date: June 22, 2016
 // Description: This page allows the registered users to create games and information in it.
 
 namespace GameTracker_Part3
